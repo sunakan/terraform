@@ -33,6 +33,7 @@ const (
 )
 
 func main() {
+	log.SetFlags(log.Llongfile) // この行を追加
 	// Override global prefix set by go-dynect during init()
 	log.SetPrefix("")
 	os.Exit(realMain())
